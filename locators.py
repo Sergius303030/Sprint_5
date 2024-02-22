@@ -1,0 +1,22 @@
+from selenium.webdriver.common.by import By
+
+class Locators:
+    FILD_NAME = (By.XPATH, ".//label[text()='Имя']//parent::*/input[@type='text' and @name='name']")
+    FILD_EMAIL = (By.XPATH, ".//label[text()='Email']//parent::*/input[@type='text' and @name='name']")
+    FILD_PASSWORD = (By.XPATH, ".//label[text()='Пароль']//parent::*/input[@type='password' and @name='Пароль']")
+    ERROR_MESSAGE = (By.XPATH, ".//p[contains(@class, 'input__error')]")
+    BUTTON_REGISTRATION = (By.XPATH, './/button[text()="Зарегистрироваться"]')
+    LOGIN_TITLE = (By.XPATH, ".//*[text() = 'Вход']")
+    RECOVERY_TITLE = (By.XPATH, ".//*[text() = 'Вход']")
+    MAIN_TITLE = (By.XPATH, ".//*[text() = 'Соберите бургер']")
+    LINK_LOGIN = (By.XPATH, ".//a[contains(text(),'Войти')]")
+    BUTTON_LOGIN = (By.XPATH, ".//button[contains(text(),'Войти')]")
+    BUTTON_PROFILE = (By.XPATH, ".//p[text()='Личный Кабинет']")
+    BUTTON_CHECKOUT = (By.XPATH, ".//button[contains(text(),'Оформить заказ')]")
+    BUTTON_CONSTRUCTOR = (By.XPATH, ".//p[text()='Конструктор']")
+    LOGO = (By.XPATH, ".//div[@class='AppHeader_header__logo__2D0X2']")
+    BUTTON_LOGOUT = (By.XPATH, ".//button[text()='Выход']")
+    BUTTON_BAN = (By.XPATH, ".//span[text()='Булки']/parent::*")
+    BUTTON_SAUCE = (By.XPATH, ".//span[text()='Соусы']/parent::*")
+    BUTTON_FILLING = (By.XPATH, ".//span[text()='Начинки']/parent::*")
+    HINT_PROFILE = (By.XPATH, ".//*[text() = 'В этом разделе вы можете изменить свои персональные данные']")
